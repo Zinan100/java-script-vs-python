@@ -417,7 +417,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 )
             )
             await query.answer('Check Out The Chat',show_alert=True)
-            await asyncio.sleep(60)
+            await asyncio.sleep(300)
             await msg1.delete()
             await msg.delete()
             del msg1, msg
@@ -787,25 +787,25 @@ async def auto_filter(client, msg, spoll=False):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
             reply_markup=InlineKeyboardMarkup(btn))
-            await asyncio.sleep(60)
+            await asyncio.sleep(300)
             await hehe.delete()
             await message.delete()
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
             hmm = await message.reply_photo(photo=poster, caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
-            await asyncio.sleep(60)
+            await asyncio.sleep(300)
             await hmm.delete()
             await message.delete()
         except Exception as e:
             logger.exception(e)
             fek = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
-            await asyncio.sleep(60)
+            await asyncio.sleep(300)
             await fek.delete()
             await msg.delete()
     else:
         fuk = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
-        await asyncio.sleep(60)
+        await asyncio.sleep(300)
         await fuk.delete()
         await msg.delete()
     if spoll:
