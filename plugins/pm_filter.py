@@ -398,11 +398,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     protect_content=True if ident == "filep" else False 
                 )
                 msg1 = await query.message.reply(
-                f'<b>Hey 👋{query.from_user.mention}\n\n'
+                f'<b>Hey 👋{query.from_user.mention}\n'
                 f'<b>📫 Yᴏuʀ Fɪʟᴇ ɪꜱ Rᴇᴀᴅʏ 👇\n\n'
                 f'<b>↬ ғɪʟᴇ ɴᴀᴍᴇ: </b><code>{title}</code>\n'
                 f'<b>↬ sɪᴢᴇ:</b> {size}\n\n'
-                '<code>𝐓𝐡𝐢𝐬 𝐟𝐢𝐥𝐞 𝐰𝐢𝐥𝐥 𝐛𝐞 𝐝𝐞𝐥𝐞𝐭𝐞𝐝 𝐢𝐧 𝟓 𝐦𝐢𝐧𝐮𝐭𝐞𝐬.!</code>',
+                '<code>𝘛𝘩𝘪𝘴 𝘍𝘪𝘭𝘦 𝘸𝘪𝘭𝘭 𝘣𝘦 𝘋𝘦𝘭𝘦𝘵𝘦𝘥 𝘪𝘯 5 𝘔𝘪𝘯𝘶𝘵𝘦𝘴.!</code>',
                 True,
                 'html',
                 reply_markup=InlineKeyboardMarkup(
