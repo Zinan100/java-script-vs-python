@@ -15,8 +15,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/kckhais/Eva-KC",
-    "repository": "https://github.com/kckhais/Eva-KC",
+    "website": "https://github.com/kckhais/Eva-KC-Bot",
+    "repository": "https://github.com/kckhais/Eva-KC-Bot",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
