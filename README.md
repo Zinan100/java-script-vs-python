@@ -73,7 +73,7 @@ Read [this](https://telegram.dog/TeamEvamaria/12) before you start messing up wi
 ```
 
 ## Thanks to 
- - Thanks To EvaMaria For His Awesome [EvaMaria](https://github.com/farshadpyt/EvaMaria)
+ - Thanks To farshadpyt For His Awesome [EvaMaria](https://github.com/farshadpyt/EvaMaria)
  - Thanks To EvaMaria-Devs For Thier Awesome [EvaMaria](https://github.com/EvamariaTG/EvaMaria)
  - Thanks To Dan For His Awesome [Library](https://github.com/pyrogram/pyrogram)
  - Thanks To Mahesh For His Awesome [Media-Search-bot](https://github.com/Mahesh0253/Media-Search-bot)
