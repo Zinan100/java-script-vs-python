@@ -376,7 +376,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                                                        file_caption='' if f_caption is None else f_caption)
 
                 buttons = [[
-                  InlineKeyboardButton('🔰 Main Group 🔰', url='https://t.me/KC_Films')
+                  InlineKeyboardButton('🔰 Main Channel 🔰', url='https://t.me/M_E_UPDATEZ')
                   ]]                                        
             except Exception as e:
                 logger.exception(e)
@@ -448,7 +448,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                                                        file_size='' if size is None else size,
                                                        file_caption='' if f_caption is None else f_caption)
                 buttons = [[
-                  InlineKeyboardButton('🔰 Main Group 🔰', url='https://t.me/KC_Films')
+                  InlineKeyboardButton('🔰 ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ 🔰', url='https://t.me/M_E_UPDATEZ')
                   ]]
             except Exception as e:
                 logger.exception(e)
@@ -731,23 +731,9 @@ async def auto_filter(client, msg, spoll=False):
              InlineKeyboardButton('🗑', callback_data='close_data'),
              InlineKeyboardButton(text="NEXT ⏩", callback_data=f"next_{req}_{key}_{offset}")]   
         )
-        btn.insert(0,
-            [InlineKeyboardButton(text="🔰 Main Group 🔰",url="https://t.me/KC_Films")]
-            )
-        btn.insert(0,
-            [InlineKeyboardButton(text="⚜️ Backup Channel ⚜️",url="https://t.me/+7AyTKA_SqdsyNWNl"),
-             InlineKeyboardButton(text="🧲 Backup Group 🧲",url="https://t.me/KC_Filmz")]
-        )
     else:
         btn.append(
             [InlineKeyboardButton(text="🗓 1/1", callback_data="pages")]
-        )
-        btn.insert(0,
-            [InlineKeyboardButton(text="🔰 Main Group 🔰",url="https://t.me/KC_Films")]
-            )
-        btn.insert(0,
-            [InlineKeyboardButton(text="⚜️ Backup Channel ⚜️",url="https://t.me/+7AyTKA_SqdsyNWNl"),
-             InlineKeyboardButton(text="🧲 Backup Group 🧲",url="https://t.me/KC_Filmz")]
         )
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
